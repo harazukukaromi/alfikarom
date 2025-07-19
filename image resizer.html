@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preview Sebelum & Sesudah Kompres</title>
+  <h2>Upload Picture</h2>
+  <link rel="stylesheet" href="image.css">
+  <input type accept="image/*" onchange="previewImage(event)">
+    <form action="/action_page.php" method="POST" enctype="multipart/form-data">
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    <input type="submit">
+    <div class="preview-container">
+        <div class="preview-box">
+          <h3>Sebelum Kompresi</h3>
+          <img id="originalImg" src="#" alt="Original" style="display: none; max-width: 100%;">
+        </div>
+        <div class="preview-box">
+          <h3>Setelah Kompresi</h3>
+          <img id="resizedImg" src="#" alt="Resized" style="display: none; max-width: 100%;">
+        </div>
+      </div>
+  </form>
+</html>
+</html>
